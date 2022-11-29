@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "closure #1 in closure #1 in listDrinks.showDrinks(_:):listDrinks.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "usedDrinks">
+            </PersistentString>
+            <PersistentString
+               value = "allComForDrink">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "AddDrinkId.init():addDrinkId.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "listDrinks.showDrink(_:):listDrinks.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "usedDrinks">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "listDrinks.getAllComForDrink(_:):listDrinks.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = " UserSettings().score">
+            </PersistentString>
+            <PersistentString
+               value = "allCom">
+            </PersistentString>
+            <PersistentString
+               value = "allComForDrink">
+            </PersistentString>
+            <PersistentString
+               value = "listOfComponenets">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "AddDrinkId.usedDrinks.modify:addDrinkId.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "AddDrinkId().usedDrinks">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "closure #1 in closure #1 in closure #1 in closure #1 in closure #1 in closure #1 in listDrinks.body.getter:listDrinks.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "ifId">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "closure #1 in closure #1 in closure #1 in closure #1 in listDrinks.body.getter:listDrinks.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "usedDrinks">
+            </PersistentString>
+            <PersistentString
+               value = "ifId">
+            </PersistentString>
+            <PersistentString
+               value = "allComForDrink">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "closure #1 in closure #1 in listDrinks.checkGinDrinks():listDrinks.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "usedDrinksIds.usedDrinks">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "listDrinks.ifIdIsInList(_:):listDrinks.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "usedDrinksIds.usedDrinks">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "listDrinks.showDrinks(_:):listDrinks.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "allComForDrink">
+            </PersistentString>
+            <PersistentString
+               value = "UserSettings().score">
+            </PersistentString>
+            <PersistentString
+               value = "allCom">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "listDrinks.increment():listDrinks.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = " UserSettings().score">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "closure #1 in listDrinks.showDrinks(_:):listDrinks.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "allComForDrink">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>

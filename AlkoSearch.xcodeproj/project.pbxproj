@@ -1,0 +1,453 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		ED06BA01292C07C200DDA51C /* listDrinks.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED06BA00292C07C200DDA51C /* listDrinks.swift */; };
+		ED66EE822927F85A00B8BDE7 /* viewGin.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED66EE812927F85A00B8BDE7 /* viewGin.swift */; };
+		ED66EE842927F8C600B8BDE7 /* viewJager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED66EE832927F8C600B8BDE7 /* viewJager.swift */; };
+		ED66EE86292914AA00B8BDE7 /* viewDrink.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED66EE85292914A900B8BDE7 /* viewDrink.swift */; };
+		ED68948E292942B70040DA38 /* searching.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED68948D292942B60040DA38 /* searching.swift */; };
+		ED92ECAC292FBB3A00DF019D /* viewVodka.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED92ECAB292FBB3A00DF019D /* viewVodka.swift */; };
+		ED9759CB29353CA7006D6164 /* viewDrinkSearching.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9759CA29353CA7006D6164 /* viewDrinkSearching.swift */; };
+		EDA24DD8292AB44000912EDE /* findDrink.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA24DD7292AB43F00912EDE /* findDrink.swift */; };
+		EDBBF809292685F7002DC2C4 /* AlkoSearchApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDBBF808292685F7002DC2C4 /* AlkoSearchApp.swift */; };
+		EDBBF80D292685F9002DC2C4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EDBBF80C292685F9002DC2C4 /* Assets.xcassets */; };
+		EDBBF810292685F9002DC2C4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EDBBF80F292685F9002DC2C4 /* Preview Assets.xcassets */; };
+		EDBBF8172926866C002DC2C4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EDBBF8162926866C002DC2C4 /* GoogleService-Info.plist */; };
+		EDBBF81A292688D9002DC2C4 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = EDBBF819292688D9002DC2C4 /* FirebaseFirestore */; };
+		EDBBF81F292692DB002DC2C4 /* drinks.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDBBF81E292692DB002DC2C4 /* drinks.swift */; };
+		EDBBF8212926934A002DC2C4 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDBBF8202926934A002DC2C4 /* ViewModel.swift */; };
+		EDBBF83D29279216002DC2C4 /* mainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDBBF83C29279216002DC2C4 /* mainView.swift */; };
+		EDBBF83F2927C8D3002DC2C4 /* viewDrinks.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDBBF83E2927C8D3002DC2C4 /* viewDrinks.swift */; };
+		EDD4020F29310D4E00FA4251 /* viewAlcohol.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD4020E29310D4E00FA4251 /* viewAlcohol.swift */; };
+		EDF2B371292EB0A200FD11F6 /* checkDrink.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDF2B370292EB0A200FD11F6 /* checkDrink.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		ED06BA00292C07C200DDA51C /* listDrinks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = listDrinks.swift; sourceTree = "<group>"; };
+		ED66EE812927F85A00B8BDE7 /* viewGin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = viewGin.swift; sourceTree = "<group>"; };
+		ED66EE832927F8C600B8BDE7 /* viewJager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = viewJager.swift; sourceTree = "<group>"; };
+		ED66EE85292914A900B8BDE7 /* viewDrink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = viewDrink.swift; sourceTree = "<group>"; };
+		ED68948D292942B60040DA38 /* searching.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = searching.swift; sourceTree = "<group>"; };
+		ED92ECAB292FBB3A00DF019D /* viewVodka.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = viewVodka.swift; sourceTree = "<group>"; };
+		ED9759CA29353CA7006D6164 /* viewDrinkSearching.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = viewDrinkSearching.swift; sourceTree = "<group>"; };
+		EDA24DD7292AB43F00912EDE /* findDrink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = findDrink.swift; sourceTree = "<group>"; };
+		EDBBF805292685F7002DC2C4 /* AlkoSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AlkoSearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EDBBF808292685F7002DC2C4 /* AlkoSearchApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlkoSearchApp.swift; sourceTree = "<group>"; };
+		EDBBF80C292685F9002DC2C4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EDBBF80F292685F9002DC2C4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		EDBBF8162926866C002DC2C4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		EDBBF81E292692DB002DC2C4 /* drinks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = drinks.swift; sourceTree = "<group>"; };
+		EDBBF8202926934A002DC2C4 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		EDBBF83C29279216002DC2C4 /* mainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mainView.swift; sourceTree = "<group>"; usesTabs = 0; wrapsLines = 1; };
+		EDBBF83E2927C8D3002DC2C4 /* viewDrinks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = viewDrinks.swift; sourceTree = "<group>"; };
+		EDD4020E29310D4E00FA4251 /* viewAlcohol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = viewAlcohol.swift; sourceTree = "<group>"; };
+		EDF2B370292EB0A200FD11F6 /* checkDrink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = checkDrink.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EDBBF802292685F7002DC2C4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EDBBF81A292688D9002DC2C4 /* FirebaseFirestore in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EDBBF7FC292685F7002DC2C4 = {
+			isa = PBXGroup;
+			children = (
+				EDBBF807292685F7002DC2C4 /* AlkoSearch */,
+				EDBBF806292685F7002DC2C4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EDBBF806292685F7002DC2C4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EDBBF805292685F7002DC2C4 /* AlkoSearch.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EDBBF807292685F7002DC2C4 /* AlkoSearch */ = {
+			isa = PBXGroup;
+			children = (
+				EDBBF808292685F7002DC2C4 /* AlkoSearchApp.swift */,
+				EDBBF81D29269231002DC2C4 /* Views */,
+				EDBBF81C29269227002DC2C4 /* Models */,
+				EDBBF81B2926921B002DC2C4 /* ViewModels */,
+				EDBBF80C292685F9002DC2C4 /* Assets.xcassets */,
+				EDBBF8162926866C002DC2C4 /* GoogleService-Info.plist */,
+				EDBBF80E292685F9002DC2C4 /* Preview Content */,
+			);
+			path = AlkoSearch;
+			sourceTree = "<group>";
+		};
+		EDBBF80E292685F9002DC2C4 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				EDBBF80F292685F9002DC2C4 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		EDBBF81B2926921B002DC2C4 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				EDF2B370292EB0A200FD11F6 /* checkDrink.swift */,
+				EDBBF8202926934A002DC2C4 /* ViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		EDBBF81C29269227002DC2C4 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				EDBBF81E292692DB002DC2C4 /* drinks.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		EDBBF81D29269231002DC2C4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				EDBBF83C29279216002DC2C4 /* mainView.swift */,
+				EDBBF83E2927C8D3002DC2C4 /* viewDrinks.swift */,
+				ED66EE812927F85A00B8BDE7 /* viewGin.swift */,
+				ED66EE832927F8C600B8BDE7 /* viewJager.swift */,
+				ED66EE85292914A900B8BDE7 /* viewDrink.swift */,
+				ED68948D292942B60040DA38 /* searching.swift */,
+				EDA24DD7292AB43F00912EDE /* findDrink.swift */,
+				ED06BA00292C07C200DDA51C /* listDrinks.swift */,
+				ED92ECAB292FBB3A00DF019D /* viewVodka.swift */,
+				EDD4020E29310D4E00FA4251 /* viewAlcohol.swift */,
+				ED9759CA29353CA7006D6164 /* viewDrinkSearching.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EDBBF804292685F7002DC2C4 /* AlkoSearch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EDBBF813292685F9002DC2C4 /* Build configuration list for PBXNativeTarget "AlkoSearch" */;
+			buildPhases = (
+				EDBBF801292685F7002DC2C4 /* Sources */,
+				EDBBF802292685F7002DC2C4 /* Frameworks */,
+				EDBBF803292685F7002DC2C4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AlkoSearch;
+			packageProductDependencies = (
+				EDBBF819292688D9002DC2C4 /* FirebaseFirestore */,
+			);
+			productName = AlkoSearch;
+			productReference = EDBBF805292685F7002DC2C4 /* AlkoSearch.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EDBBF7FD292685F7002DC2C4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1410;
+				LastUpgradeCheck = 1410;
+				TargetAttributes = {
+					EDBBF804292685F7002DC2C4 = {
+						CreatedOnToolsVersion = 14.1;
+					};
+				};
+			};
+			buildConfigurationList = EDBBF800292685F7002DC2C4 /* Build configuration list for PBXProject "AlkoSearch" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EDBBF7FC292685F7002DC2C4;
+			packageReferences = (
+				EDBBF818292688D9002DC2C4 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
+			productRefGroup = EDBBF806292685F7002DC2C4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EDBBF804292685F7002DC2C4 /* AlkoSearch */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EDBBF803292685F7002DC2C4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EDBBF810292685F9002DC2C4 /* Preview Assets.xcassets in Resources */,
+				EDBBF80D292685F9002DC2C4 /* Assets.xcassets in Resources */,
+				EDBBF8172926866C002DC2C4 /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EDBBF801292685F7002DC2C4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EDF2B371292EB0A200FD11F6 /* checkDrink.swift in Sources */,
+				ED06BA01292C07C200DDA51C /* listDrinks.swift in Sources */,
+				ED92ECAC292FBB3A00DF019D /* viewVodka.swift in Sources */,
+				EDD4020F29310D4E00FA4251 /* viewAlcohol.swift in Sources */,
+				EDBBF83F2927C8D3002DC2C4 /* viewDrinks.swift in Sources */,
+				ED68948E292942B70040DA38 /* searching.swift in Sources */,
+				EDBBF81F292692DB002DC2C4 /* drinks.swift in Sources */,
+				EDA24DD8292AB44000912EDE /* findDrink.swift in Sources */,
+				ED66EE822927F85A00B8BDE7 /* viewGin.swift in Sources */,
+				EDBBF8212926934A002DC2C4 /* ViewModel.swift in Sources */,
+				EDBBF83D29279216002DC2C4 /* mainView.swift in Sources */,
+				ED66EE86292914AA00B8BDE7 /* viewDrink.swift in Sources */,
+				ED66EE842927F8C600B8BDE7 /* viewJager.swift in Sources */,
+				ED9759CB29353CA7006D6164 /* viewDrinkSearching.swift in Sources */,
+				EDBBF809292685F7002DC2C4 /* AlkoSearchApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		EDBBF811292685F9002DC2C4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EDBBF812292685F9002DC2C4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EDBBF814292685F9002DC2C4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"AlkoSearch/Preview Content\"";
+				DEVELOPMENT_TEAM = V2RUTZ676A;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleLightContent;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.AlkoSearch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EDBBF815292685F9002DC2C4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"AlkoSearch/Preview Content\"";
+				DEVELOPMENT_TEAM = V2RUTZ676A;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleLightContent;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.AlkoSearch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EDBBF800292685F7002DC2C4 /* Build configuration list for PBXProject "AlkoSearch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EDBBF811292685F9002DC2C4 /* Debug */,
+				EDBBF812292685F9002DC2C4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EDBBF813292685F9002DC2C4 /* Build configuration list for PBXNativeTarget "AlkoSearch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EDBBF814292685F9002DC2C4 /* Debug */,
+				EDBBF815292685F9002DC2C4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		EDBBF818292688D9002DC2C4 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		EDBBF819292688D9002DC2C4 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EDBBF818292688D9002DC2C4 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = EDBBF7FD292685F7002DC2C4 /* Project object */;
+}

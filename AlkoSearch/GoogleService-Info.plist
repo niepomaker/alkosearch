@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>531920281929-7ulj3ijnk2un773phonb2matmcukqmpf.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.531920281929-7ulj3ijnk2un773phonb2matmcukqmpf</string>
+	<key>API_KEY</key>
+	<string>AIzaSyCxaRBYSVNpZjgQW776VKbgYWepjnFlkZ8</string>
+	<key>GCM_SENDER_ID</key>
+	<string>531920281929</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.AlkoSearch</string>
+	<key>PROJECT_ID</key>
+	<string>alkosearch-44558</string>
+	<key>STORAGE_BUCKET</key>
+	<string>alkosearch-44558.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:531920281929:ios:f1ad6b6bfbf0d71aa93a98</string>
+</dict>
+</plist>
