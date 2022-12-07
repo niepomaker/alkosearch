@@ -15,55 +15,52 @@ struct Searching: View {
     @ObservedObject var modelWhisky = ViewModel()
     @ObservedObject var modelRum = ViewModel()
     @ObservedObject var modelTequila = ViewModel()
+    @State var ifSearching = false
+    var models: [ViewModel] = []
+    var modelList:[[Drinks]] {
+        return [modelGin.list, modelJager.list, modelVodka.list, modelRum.list, modelWhisky.list, modelTequila.list]
+    }
     @State var drink = ""
     
     var body: some View {
-        NavigationView{
-            ZStack{
+        ZStack{
                 Image("background").resizable().ignoresSafeArea()
                 VStack{
                     Spacer()
-                    Spacer()
                     NavigationView{
-                        VStack {
-                            List{
-                                showDrink(modelGin.list)
-                                showDrink(modelJager.list)
-                                showDrink(modelVodka.list)
-                                showDrink(modelWhisky.list)
-                                showDrink(modelRum.list)
-                                showDrink(modelTequila.list)
+                        ScrollView{
+                            ForEach(modelList, id: \.self){item in
+                                showDrink(item)
                             }
+                            
                         }
-                    }.cornerRadius(30)
-                        .padding(.top, 30)
-                    Spacer()
-                    Spacer()
-                    Spacer()
-                    Button(action: {
-                        self.presentationMode.wrappedValue.dismiss()
-                    }){
-                        Text("Powrót")
-                            .frame(width: 200,height: 50)
-                            .background(.red)
-                            .foregroundColor(.white)
-                            .cornerRadius(20)
-                            .bold()
-                            .font(.title2)
+                    }.searchable(text: $drink, placement: .navigationBarDrawer(displayMode: .always),  prompt: "Wyrzukaj drinka")
+                     .accentColor(.black)
+                     .buttonStyle(.plain)
+                     .cornerRadius(30)
+                
+                     
+                    if !ifSearching{
+                        Button(action: {self.presentationMode.wrappedValue.dismiss()}){
+                            Text("Powrót")
+                                .frame(width: 250,height: 50)
+                                .background(Color(hue: 1.0, saturation: 0.62, brightness: 0.932))
+                                .foregroundColor(Color.white)
+                                .cornerRadius(20)
+                                .font(.title)
+                                .bold()
+                                .padding(.top, 10)
                         }.buttonStyle(.plain)
+                    }
                     
-                }.searchable(text: $drink)
-                    .accentColor(Color(red: 0.0, green: 0.0, blue: 0.0))
-                    .navigationBarHidden(true)
-                    .navigationBarBackButtonHidden(true)
-                    .font(.title2)
-                    .frame(width: 375, height: 750)
-            }
-        }.navigationBarBackButtonHidden(true)
-            .ignoresSafeArea(.keyboard, edges: .bottom)
-            .scrollDismissesKeyboard(.immediately)
+                    
+                }
+                .cornerRadius(40)
+            
+            }.navigationBarHidden(true)
+
         
-    }
+        }
     
     func drinks(_ data: [Drinks]) -> [Drinks] {
         let lcDrinks = data
@@ -75,25 +72,32 @@ struct Searching: View {
     func showDrink(_ model: [Drinks]) -> some View{
         let allDrink = drinks(model)
         return ForEach(allDrink, id: \.self){ item in
-            NavigationLink(destination: viewDrink(drinkID: item.id, drinkName: item.name, drinkImage: item.image,                                        drinkCom0: item.com0, drinkCom1: item.com1, drinkCom2: item.com2,                                      drinkCom3: item.com3, drinkCom4: item.com4, drinkCom5: item.com5,                                      drinkCom6: item.com6, drinkCom7: item.com7, drinkCom8: item.com8,                                      drinkCom9: item.com9)){
+            NavigationLink(destination: ViewSearching(drink: item)){
                 HStack{
                     Image(item.image)
                         .resizable()
                         .frame(width: 100,height: 100)
                     VStack(alignment: .leading){
                         Text(item.name.capitalized)
-                            .font(.title3)
+                            .font(.title2)
                             .foregroundColor(Color.black)
                             .padding(.trailing, 20.0)
                         Text(" " + item.notes)
-                            .font(.footnote)
-
+                            .font(.callout)
+                            .foregroundColor(.black)
                     }
+                    Spacer()
+                    Image(systemName: "arrow.right")
+                        .foregroundColor(.black)
+                        .padding(.trailing, 20)
                 }
+                .frame(width: 375, height: 100, alignment: .top)
+                .background(.white)
+                .cornerRadius(20)
+                .shadow(radius: 5)
             }.accentColor(.white)
+                .buttonStyle(.plain)
         }
-
-        
     }
     
     init(){
@@ -103,6 +107,7 @@ struct Searching: View {
         modelWhisky.getDrinks("drinksWhisky")
         modelRum.getDrinks("drinksRum")
         modelTequila.getDrinks("drinksTequila")
+        self.models = [modelGin, modelJager, modelVodka, modelWhisky, modelRum, modelTequila]
     }
 }
             

@@ -8,11 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		ED06BA01292C07C200DDA51C /* listDrinks.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED06BA00292C07C200DDA51C /* listDrinks.swift */; };
+		ED5CC71B293A17B800EF7EDF /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED5CC71A293A17B800EF7EDF /* ImagePicker.swift */; };
+		ED5CC71D293A17DD00EF7EDF /* ViewCamera.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED5CC71C293A17DD00EF7EDF /* ViewCamera.swift */; };
 		ED66EE822927F85A00B8BDE7 /* viewGin.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED66EE812927F85A00B8BDE7 /* viewGin.swift */; };
 		ED66EE842927F8C600B8BDE7 /* viewJager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED66EE832927F8C600B8BDE7 /* viewJager.swift */; };
 		ED66EE86292914AA00B8BDE7 /* viewDrink.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED66EE85292914A900B8BDE7 /* viewDrink.swift */; };
 		ED68948E292942B70040DA38 /* searching.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED68948D292942B60040DA38 /* searching.swift */; };
+		ED8B9234293807D90088C53D /* viewSearching.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8B9233293807D80088C53D /* viewSearching.swift */; };
+		ED8B92362938E6600088C53D /* addDrink.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8B92352938E6600088C53D /* addDrink.swift */; };
 		ED92ECAC292FBB3A00DF019D /* viewVodka.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED92ECAB292FBB3A00DF019D /* viewVodka.swift */; };
+		ED969794293946D700FA4FB3 /* Picker.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED969793293946D700FA4FB3 /* Picker.swift */; };
 		ED9759CB29353CA7006D6164 /* viewDrinkSearching.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9759CA29353CA7006D6164 /* viewDrinkSearching.swift */; };
 		EDA24DD8292AB44000912EDE /* findDrink.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA24DD7292AB43F00912EDE /* findDrink.swift */; };
 		EDBBF809292685F7002DC2C4 /* AlkoSearchApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDBBF808292685F7002DC2C4 /* AlkoSearchApp.swift */; };
@@ -30,11 +35,16 @@
 
 /* Begin PBXFileReference section */
 		ED06BA00292C07C200DDA51C /* listDrinks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = listDrinks.swift; sourceTree = "<group>"; };
+		ED5CC71A293A17B800EF7EDF /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		ED5CC71C293A17DD00EF7EDF /* ViewCamera.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCamera.swift; sourceTree = "<group>"; };
 		ED66EE812927F85A00B8BDE7 /* viewGin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = viewGin.swift; sourceTree = "<group>"; };
 		ED66EE832927F8C600B8BDE7 /* viewJager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = viewJager.swift; sourceTree = "<group>"; };
 		ED66EE85292914A900B8BDE7 /* viewDrink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = viewDrink.swift; sourceTree = "<group>"; };
 		ED68948D292942B60040DA38 /* searching.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = searching.swift; sourceTree = "<group>"; };
+		ED8B9233293807D80088C53D /* viewSearching.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = viewSearching.swift; sourceTree = "<group>"; };
+		ED8B92352938E6600088C53D /* addDrink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addDrink.swift; sourceTree = "<group>"; };
 		ED92ECAB292FBB3A00DF019D /* viewVodka.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = viewVodka.swift; sourceTree = "<group>"; };
+		ED969793293946D700FA4FB3 /* Picker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Picker.swift; sourceTree = "<group>"; };
 		ED9759CA29353CA7006D6164 /* viewDrinkSearching.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = viewDrinkSearching.swift; sourceTree = "<group>"; };
 		EDA24DD7292AB43F00912EDE /* findDrink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = findDrink.swift; sourceTree = "<group>"; };
 		EDBBF805292685F7002DC2C4 /* AlkoSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AlkoSearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -105,6 +115,7 @@
 			children = (
 				EDF2B370292EB0A200FD11F6 /* checkDrink.swift */,
 				EDBBF8202926934A002DC2C4 /* ViewModel.swift */,
+				ED5CC71A293A17B800EF7EDF /* ImagePicker.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -113,6 +124,8 @@
 			isa = PBXGroup;
 			children = (
 				EDBBF81E292692DB002DC2C4 /* drinks.swift */,
+				ED969793293946D700FA4FB3 /* Picker.swift */,
+				ED5CC71C293A17DD00EF7EDF /* ViewCamera.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -131,6 +144,8 @@
 				ED92ECAB292FBB3A00DF019D /* viewVodka.swift */,
 				EDD4020E29310D4E00FA4251 /* viewAlcohol.swift */,
 				ED9759CA29353CA7006D6164 /* viewDrinkSearching.swift */,
+				ED8B9233293807D80088C53D /* viewSearching.swift */,
+				ED8B92352938E6600088C53D /* addDrink.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -219,12 +234,17 @@
 				EDBBF83F2927C8D3002DC2C4 /* viewDrinks.swift in Sources */,
 				ED68948E292942B70040DA38 /* searching.swift in Sources */,
 				EDBBF81F292692DB002DC2C4 /* drinks.swift in Sources */,
+				ED969794293946D700FA4FB3 /* Picker.swift in Sources */,
 				EDA24DD8292AB44000912EDE /* findDrink.swift in Sources */,
 				ED66EE822927F85A00B8BDE7 /* viewGin.swift in Sources */,
 				EDBBF8212926934A002DC2C4 /* ViewModel.swift in Sources */,
+				ED8B92362938E6600088C53D /* addDrink.swift in Sources */,
 				EDBBF83D29279216002DC2C4 /* mainView.swift in Sources */,
 				ED66EE86292914AA00B8BDE7 /* viewDrink.swift in Sources */,
 				ED66EE842927F8C600B8BDE7 /* viewJager.swift in Sources */,
+				ED8B9234293807D90088C53D /* viewSearching.swift in Sources */,
+				ED5CC71D293A17DD00EF7EDF /* ViewCamera.swift in Sources */,
+				ED5CC71B293A17B800EF7EDF /* ImagePicker.swift in Sources */,
 				ED9759CB29353CA7006D6164 /* viewDrinkSearching.swift in Sources */,
 				EDBBF809292685F7002DC2C4 /* AlkoSearchApp.swift in Sources */,
 			);
@@ -358,6 +378,7 @@
 				DEVELOPMENT_TEAM = V2RUTZ676A;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "This app requires usage of camera to function property!";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -388,6 +409,7 @@
 				DEVELOPMENT_TEAM = V2RUTZ676A;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "This app requires usage of camera to function property!";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

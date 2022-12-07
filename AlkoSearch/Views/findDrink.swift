@@ -4,7 +4,6 @@ let nieAlkohole = ["woda gazowana", "sok pomarańczowy", "sok grejfrutowy", "sok
 
 struct findDrink: View {
     @State var skladniki: [String] = []
-//    var allDrinks = Chec
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
     
     var body: some View {
@@ -72,7 +71,7 @@ struct findDrink: View {
                         }){
                             Text("Powrót")
                                 .frame(width: 175,height: 50)
-                                .background(Color(hue: 1.0, saturation: 0.682, brightness: 1.0))
+                                .background(Color(hue: 1.0, saturation: 0.62, brightness: 0.932))
                                 .foregroundColor(.white)
                                 .cornerRadius(20)
                                 .font(.title)
@@ -91,11 +90,13 @@ struct findDrink: View {
                                 .font(.title)
                         }.buttonStyle(.plain)
                             .accentColor(.white)
+                            .navigationBarBackButtonHidden(true)
                     }.frame(width: 350)
                 }
             }
         }.accentColor(.black)
             .navigationBarBackButtonHidden(true)
+            
     }
 }
 

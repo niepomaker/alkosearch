@@ -32,32 +32,43 @@ struct viewDrinks: View {
                                 .padding(.top, 10)
                         }
                     }.buttonStyle(.plain)
+                        .navigationBarHidden(true)
                     VStack{
-                        List{
+                        ScrollView{
                             NavigationLink{
                                 viewAlcohol("drinksGin")
                             } label: {
                                     Image("gin")
                                         .resizable()
                                         .frame(width: 150,height: 150)
+                                Rectangle().fill(.black).frame(width: 1)
                                     Text("Drinki z ginem    ")
-                                        .font(.title2)
-                                        .foregroundColor(Color.black)
+                                        .font(.custom("Cochin", size: 30))
+                                        .foregroundColor(.black)
                                         
                             }
-                            .shadow(radius: 10)
-                            
+                            .buttonStyle(.plain)
+                            .frame(width: 375, height: 150, alignment: .leading)
+                            .background(.white)
+                            .cornerRadius(20)
+                            .shadow(radius: 5)
                             NavigationLink{
                                 viewAlcohol("drinksJager")
                             } label: {
                                 Image("jager")
                                     .resizable()
                                     .frame(width: 150,height: 150)
-                                Text("Drinki z Jagerme")
-                                    .font(.title2)
+                                Rectangle().fill(.black).frame(width: 1)
+                                Text("Drinki z Jagerem")
+                                    .font(.custom("Cochin", size: 28))
                                     .foregroundColor(Color.black)
                                 
-                            }.shadow(radius: 10)
+                            }
+                            .buttonStyle(.plain)
+                            .frame(width: 375, height: 150, alignment: .leading)
+                            .background(.white)
+                            .cornerRadius(20)
+                            .shadow(radius: 5)
                             
                             NavigationLink{
                                 viewAlcohol("drinksVodka")
@@ -65,11 +76,17 @@ struct viewDrinks: View {
                                 Image("wodka")
                                     .resizable()
                                     .frame(width: 150,height: 150)
+                                Rectangle().fill(.black).frame(width: 1)
                                 Text("Drinki z wódką")
-                                    .font(.title2)
+                                    .font(.custom("Cochin", size: 30))
                                     .foregroundColor(Color.black)
                                 
-                            }.shadow(radius: 10)
+                            }
+                            .buttonStyle(.plain)
+                            .frame(width: 375, height: 150, alignment: .leading)
+                            .background(.white)
+                            .cornerRadius(20)
+                            .shadow(radius: 5)
                             
                             NavigationLink{
                                 viewAlcohol("drinksWhisky")
@@ -77,11 +94,17 @@ struct viewDrinks: View {
                                 Image("whisky")
                                     .resizable()
                                     .frame(width: 150,height: 150)
+                                Rectangle().fill(.black).frame(width: 1)
                                 Text("Drinki z whisky")
-                                    .font(.title2)
+                                    .font(.custom("Cochin", size: 30))
                                     .foregroundColor(Color.black)
                                 
-                            }.shadow(radius: 10)
+                            }
+                            .buttonStyle(.plain)
+                            .frame(width: 375, height: 150, alignment: .leading)
+                            .background(.white)
+                            .cornerRadius(20)
+                            .shadow(radius: 5)
                             
                             NavigationLink{
                                 viewAlcohol("drinksRum")
@@ -89,11 +112,17 @@ struct viewDrinks: View {
                                 Image("rum")
                                     .resizable()
                                     .frame(width: 150,height: 150)
+                                Rectangle().fill(.black).frame(width: 1)
                                 Text("Drinki z rumem")
-                                    .font(.title2)
+                                    .font(.custom("Cochin", size: 30))
                                     .foregroundColor(Color.black)
                                 
-                            }.shadow(radius: 10)
+                            }
+                            .buttonStyle(.plain)
+                            .frame(width: 375, height: 150, alignment: .leading)
+                            .background(.white)
+                            .cornerRadius(20)
+                            .shadow(radius: 5)
                             
                             NavigationLink{
                                 viewAlcohol("drinksTequila")
@@ -101,11 +130,17 @@ struct viewDrinks: View {
                                 Image("tequila")
                                     .resizable()
                                     .frame(width: 150,height: 150)
+                                Rectangle().fill(.black).frame(width: 1)
                                 Text("Drinki z tequilą")
-                                    .font(.title2)
+                                    .font(.custom("Cochin", size: 30))
                                     .foregroundColor(Color.black)
                                 
-                            }.shadow(radius: 10)
+                            }
+                            .buttonStyle(.plain)
+                            .frame(width: 375, height: 150, alignment: .leading)
+                            .background(.white)
+                            .cornerRadius(20)
+                            .shadow(radius: 5)
                         }.cornerRadius(20)
                     }
                     .navigationBarBackButtonHidden(true)
@@ -119,7 +154,7 @@ struct viewDrinks: View {
                     }){
                         Text("Powrót")
                             .frame(width: 200,height: 50)
-                            .background(Color.red)
+                            .background(Color(hue: 1.0, saturation: 0.62, brightness: 0.932))
                             .foregroundColor(Color.white)
                             .cornerRadius(20)
                             .bold()

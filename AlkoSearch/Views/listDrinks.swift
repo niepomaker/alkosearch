@@ -29,77 +29,96 @@ struct listDrinks: View {
     var models: [ViewModel] = []
     
     var body: some View {
-        ZStack {
-            Image("background").resizable().ignoresSafeArea()
-            VStack {
-                Spacer()
-                Spacer()
-                Text("Lista drinków").foregroundColor(.white).font(.largeTitle).bold()
-                
-                ZStack{
-                    List {
-                        ForEach(models){model in
-                            ForEach(model.list){item in
-                                if(CheckDrink().checkDinksCom(item, listOfComs: listOfComponenets!)){
-                                    showDrink(item)
-                                }
+        NavigationView {
+            ZStack {
+                Image("background").resizable().ignoresSafeArea()
+                VStack {
+                    Spacer()
+                    Spacer()
+                    Text("Lista drinków").foregroundColor(.white).font(.largeTitle).bold()
+                    
+                    ZStack{
+                        ScrollView {
+                            ForEach(models){model in
+                                ForEach(model.list){item in
+                                    if(CheckDrink().checkDinksCom(item, listOfComs: listOfComponenets!)){
+                                        showDrink(item)
+                                    }
+                                }.buttonStyle(.plain)
+                            }
+                        }.frame(width: 375)
+                        .cornerRadius(20)
+                        
+                        if(status.ifAnyDrinkOccurs == false){
+                            VStack{
+                                Text("Żaden drink nie spełnia wymagań. Prośba o zmiane składników.")
+                                    .multilineTextAlignment(.center)
+                                    .frame(width: 375, height: 200)
+                                    .accentColor(.white)
+                                    .background(.white)
+                                    .foregroundColor(.red)
+                                    .cornerRadius(20)
+                                    .font(.largeTitle)
+                                    .bold()
+                                    .accessibilityLabel(/*@START_MENU_TOKEN@*/"Label"/*@END_MENU_TOKEN@*/)
+                                    .shadow(radius: 30)
                             }
                         }
-                    }.frame(width: 375)
-                    .cornerRadius(20)
-                    
-                    if(status.ifAnyDrinkOccurs == false){
-                        VStack{
-                            Text("Żaden drink nie spełnia wymagań. Prośba o zmiane składników.")
-                                .multilineTextAlignment(.center)
-                                .frame(width: 375, height: 200)
-                                .accentColor(.white)
-                                .background(.white)
-                                .foregroundColor(.red)
-                                .cornerRadius(20)
-                                .font(.largeTitle)
-                                .bold()
-                                .accessibilityLabel(/*@START_MENU_TOKEN@*/"Label"/*@END_MENU_TOKEN@*/)
-                                .shadow(radius: 30)
-                        }
                     }
-                }
-                
-            Spacer()
-            Button(action: {self.presentationMode.wrappedValue.dismiss()}){
-                Text("Powrót")
-                    .frame(width: 250,height: 50)
-                    .background(Color.red)
-                    .foregroundColor(Color.white)
-                    .cornerRadius(20)
-                    .font(.title)
-                    .bold()
-                    .padding(.top, 10)
-            }.buttonStyle(.plain)
-        }.accentColor(.white)
-                .frame(width: 350, alignment: .top)
+                    
+                Spacer()
+                Button(action: {self.presentationMode.wrappedValue.dismiss()}){
+                    Text("Powrót")
+                        .frame(width: 250,height: 50)
+                        .background(Color(hue: 1.0, saturation: 0.62, brightness: 0.932))
+                        .foregroundColor(Color.white)
+                        .cornerRadius(20)
+                        .font(.title)
+                        .bold()
+                        .padding(.top, 10)
+                }.buttonStyle(.plain)
+            }
+                    .frame(width: 350, alignment: .top)
+            }.accentColor(.white)
+                .navigationBarBackButtonHidden(true)
         }
         .navigationBarBackButtonHidden(true)
+        .accentColor(.white)
         
         
     }
     
     func showDrink(_ drink: Drinks) -> AnyView {
         status.changeStatus()
-        return AnyView(NavigationLink(destination: ViewDrinkSearching(listOfComponenets: listOfComponenets, drinkID: drink.id, drinkName: drink.name, drinkImage: drink.image, drinkCom0: drink.com0,
-                                                               drinkCom1: drink.com1, drinkCom2: drink.com2, drinkCom3: drink.com3, drinkCom4: drink.com4,
-                                                               drinkCom5: drink.com5, drinkCom6: drink.com6, drinkCom7: drink.com7, drinkCom8: drink.com8,
-                                                               drinkCom9: drink.com9, drinkNotes: drink.notes)) {
-            HStack {
+        return AnyView(NavigationLink(destination: ViewDrinkSearching(listOfComponenets: listOfComponenets, drink: drink)) {
+            HStack{
                 Image(drink.image)
                     .resizable()
                     .frame(width: 100,height: 100)
-                Text(drink.name.capitalized)
-                    .font(.title2)
-                    .foregroundColor(Color.black)
-                    .padding(/*@START_MENU_TOKEN@*/.vertical, 10.0/*@END_MENU_TOKEN@*/)
+                VStack(alignment: .leading){
+                    Text(drink.name.capitalized)
+                        .font(.title2)
+                        .foregroundColor(Color.black)
+                        .padding(.trailing, 20.0)
+                    Text(" " + drink.notes)
+                        .font(.callout)
+                        .foregroundColor(.black)
+                }
+                Spacer()
+                Image(systemName: "arrow.right")
+                    .foregroundColor(.black)
+                    .padding(.trailing, 20)
+                
+                
+                
             }
-        }.accentColor(.white))
+            .buttonStyle(.plain)
+            .frame(width: 375, height: 100, alignment: .leading)
+            .background(.white)
+            .cornerRadius(20)
+            .shadow(radius: 5)
+            
+        })
         
     }
     

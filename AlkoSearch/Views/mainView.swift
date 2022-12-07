@@ -62,16 +62,13 @@ struct mainView: View {
                             .foregroundColor(.black)
                             .cornerRadius(20)
                             .shadow(radius: 30)
-                            .navigationBarTitle("Back")
+                            
                             .foregroundColor(.white)
-                            .navigationBarBackButtonHidden(true)
-                            .navigationBarHidden(true)
                         }
-                        .navigationBarHidden(true)
-                        .navigationBarBackButtonHidden(true)
+                        .navigationTitle("Back")
                         .buttonStyle(.plain)
-                        NavigationLink(destination: Searching()){
-                            Text("Dodaj/usuń drinka")
+                        NavigationLink(destination: AddDrink()){
+                            Text("Dodaj drinka")
                                 .frame(width: 325, height: 100)
                                 .bold()
                                 .font(.custom("Cochin", size: 34))
@@ -98,7 +95,12 @@ struct mainView: View {
             .navigationBarHidden(true)
             .navigationBarBackButtonHidden(true)
         }
-    }}
+        .navigationBarHidden(true)
+        .navigationBarBackButtonHidden(true)
+    }
+    
+}
+
 
 struct mainView_Previews: PreviewProvider {
     static var previews: some View {

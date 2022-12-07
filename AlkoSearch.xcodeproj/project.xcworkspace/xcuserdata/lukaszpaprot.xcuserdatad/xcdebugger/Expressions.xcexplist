@@ -14,6 +14,17 @@
          </PersistentStrings>
       </ContextState>
       <ContextState
+         contextName = "closure #1 in viewDrink.body.getter:viewDrink.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "SimpleCounter().counter">
+            </PersistentString>
+            <PersistentString
+               value = "imageCounter.counter">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
          contextName = "AddDrinkId.init():addDrinkId.swift">
          <PersistentStrings>
             <PersistentString
@@ -55,6 +66,25 @@
          </PersistentStrings>
       </ContextState>
       <ContextState
+         contextName = "viewDrink.showIngredients(_:):viewDrink.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "xd">
+            </PersistentString>
+            <PersistentString
+               value = "zmienna">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "closure #1 in closure #1 in closure #2 in closure #1 in closure #1 in closure #1 in viewDrink.body.getter:viewDrink.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "imageCounter">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
          contextName = "closure #1 in closure #1 in closure #1 in closure #1 in closure #1 in closure #1 in listDrinks.body.getter:listDrinks.swift">
          <PersistentStrings>
             <PersistentString
@@ -85,6 +115,14 @@
          </PersistentStrings>
       </ContextState>
       <ContextState
+         contextName = "viewDrink.zeroImageCounter():viewDrink.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "SimpleCounter().counter">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
          contextName = "listDrinks.ifIdIsInList(_:):listDrinks.swift">
          <PersistentStrings>
             <PersistentString
@@ -103,6 +141,14 @@
             </PersistentString>
             <PersistentString
                value = "allCom">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "viewDrink.showIngredients(_:id:):viewDrink.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "imageCounter">
             </PersistentString>
          </PersistentStrings>
       </ContextState>

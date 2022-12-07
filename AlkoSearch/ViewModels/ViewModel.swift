@@ -11,6 +11,7 @@ import Firebase
 class ViewModel: ObservableObject, Identifiable {
     @Published var list = [Drinks]()
     
+    
     func getDrinks(_ data: String){
         let db = Firestore.firestore()
         db.collection(data).getDocuments { snapshot, error in

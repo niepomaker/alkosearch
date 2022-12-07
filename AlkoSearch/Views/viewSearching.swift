@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct viewDrink: View {
+struct ViewSearching: View {
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
     var drink: Drinks
     var listOfIngredients: [String] {
@@ -26,7 +26,8 @@ struct viewDrink: View {
                     Text(drink.name.capitalized)
                         .font(.custom("Cochin", size: 40))
                         .bold()
-                        .foregroundColor(Color.white)
+                        .foregroundColor(.black)
+                        .padding(.top, 20)
                     Image(drink.image)
                         .resizable()
                         .frame(width: 300,height: 300)
@@ -44,7 +45,7 @@ struct viewDrink: View {
                         }
                     }
                     .padding(.top, 20)
-                    .padding(.bottom, 10)
+//                    .padding(.bottom, 10)
                     .shadow(radius: 5)
                     
                     Rectangle().fill(Color(red: 0.444, green: 0.433, blue: 0.999)).frame(width: 350, height: 1)
@@ -58,7 +59,9 @@ struct viewDrink: View {
                         }
                 }
             }
-        }
+        }.navigationBarTitle("")
+            .navigationBarBackButtonHidden(true)
+            .navigationBarHidden(true)
     }
     
     func showIngredients(_ ingredient: String) -> AnyView {
