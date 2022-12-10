@@ -39,4 +39,19 @@ class ViewModel: ObservableObject, Identifiable {
             }
         }
     }
+    
+    func addDrink(_ drink: Drinks, _ collectionName: String) {
+        let db = Firestore.firestore()
+        db.collection(collectionName).addDocument(data: ["name": drink.name, "image": drink.image, "notes": drink.notes,
+                                                         "com0": drink.com0, "com1": drink.com1, "com2": drink.com2,
+                                                         "com3": drink.com3, "com4": drink.com4, "com5": drink.com3,
+                                                         "com6": drink.com6, "com7": drink.com7, "com8": drink.com8,
+                                                         "com9": drink.com9]) { error in
+            if error == nil  {
+                self.getDrinks(collectionName)
+            } else {
+                
+            }
+        }
+    }
 }

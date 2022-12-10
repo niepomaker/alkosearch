@@ -11,11 +11,12 @@ struct AddDrink: View {
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
     @State var whichAlcohol:String = ""
     @State var isExpanded = false
+    @State var model = ViewModel()
     
     @State private var showSheet: Bool = false
     @State private var showImagePicker: Bool = false
     @State private var sourceType: UIImagePickerController.SourceType = .camera
-    
+    @State var placeholder = ""
     @State private var image: UIImage?
     
 //    @State var howManyComs:Int
@@ -62,14 +63,44 @@ struct AddDrink: View {
                                 Menu{
                                     ForEach(possibleAlcohol, id: \.self){item in
                                         Button(action: {
-                                            whichAlcohol = item
+                                            if(item == "Gin") {
+                                                placeholder = "Gin"
+                                                return whichAlcohol = "drinksGin"
+                                                
+                                            }
+                                            else if (item == "Wódka") {
+                                                placeholder = "Wódka"
+                                                return whichAlcohol = "drinksVodka"
+                                                
+                                            }
+                                            else if (item == "Jager") {
+                                                placeholder = "Jager"
+                                                return whichAlcohol = "drinksJager"
+                                                
+                                            }
+                                            else if (item == "Rum") {
+                                                placeholder = "Rum"
+                                                return whichAlcohol = "drinksRum"
+                                                
+                                            }
+                                            else if (item == "Whisky") {
+                                                placeholder = "Whisky"
+                                                return whichAlcohol = "drinksWhisky"
+                                                
+                                            }
+                                            else if (item == "Tequila") {
+                                                placeholder = "Tequila"
+                                                return whichAlcohol = "drinksTequila"
+                                                
+                                            }
+                                        
                                         }, label: {
                                             Text(item)
                                         })
                                     }
                                 } label: {
                                     Label(
-                                        title: {Text("Wybierz rodzaj alkoholu: \(whichAlcohol)").foregroundColor(.black)},
+                                        title: {Text("Wybierz rodzaj alkoholu: \(placeholder)").foregroundColor(.black)},
                                         icon: {Image(systemName: "plus").foregroundColor(.black).padding(.leading, 30)})
                                 }
                                 
@@ -163,7 +194,9 @@ struct AddDrink: View {
                                 .padding(.top, 10)
                         }.buttonStyle(.plain)
                         Spacer()
-                        NavigationLink(destination: mainView()){
+                        Button(action: {
+                            model.addDrink(Drinks(id: "", name: name, com0: com0, com1: com1, com2: com2, com3: com3, com4: com4, com5: com5, com6: com6, com7: com7, com8: com8, com9: com9, image: "placeholder", notes: ""), whichAlcohol)
+                        }){
                             Text("Dodaj")
                                 .frame(width: 175,height: 50)
                                 .background(Color(red: 0.412, green: 0.399, blue: 1.0))
