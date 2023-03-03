@@ -1,7 +1,7 @@
 # alkosearch
 Application for finding, searching and adding alcohol drinks with given ingredients. Main view has 4 buttons with 4 diffrent actions. 
-- First button displays list of all drinks in DataBase. 
-- Second button is responsible for finding drinks, after providing some ingredients like: vodka, gin, rum and any non-alcoholic  beverage. 
+- First button displays list of all drinks from DataBase. 
+- Second button is responsible for finding drinks, after providing some ingredients like: vodka, gin, rum and any non-alcoholic beverage. 
 - Third button takes us to the Searching View. There You can search any alcohol drink in DataBase after providing some letters. 
 - Last, but not least is the fourth button, which is responsible for simple adding drink to the DataBase. 
 
