@@ -9,17 +9,17 @@ import SwiftUI
 
 struct AddDrink: View {
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
+    @State private var showingAlert = false
     @State var whichAlcohol:String = ""
     @State var isExpanded = false
     @State var model = ViewModel()
+    @ObservedObject var images = ImageModel()
     
     @State private var showSheet: Bool = false
     @State private var showImagePicker: Bool = false
     @State private var sourceType: UIImagePickerController.SourceType = .camera
     @State var placeholder = ""
     @State private var image: UIImage?
-    
-//    @State var howManyComs:Int
     @State var com0 = ""
     @State var com1 = ""
     @State var com2 = ""
@@ -196,6 +196,7 @@ struct AddDrink: View {
                         Spacer()
                         Button(action: {
                             model.addDrink(Drinks(id: "", name: name, com0: com0, com1: com1, com2: com2, com3: com3, com4: com4, com5: com5, com6: com6, com7: com7, com8: com8, com9: com9, image: "placeholder", notes: ""), whichAlcohol)
+                            showingAlert = true
                         }){
                             Text("Dodaj")
                                 .frame(width: 175,height: 50)
@@ -206,13 +207,16 @@ struct AddDrink: View {
                                 .bold()
                                 .font(.title)
                         }.buttonStyle(.plain)
-                            .accentColor(.white)
-                            .navigationBarBackButtonHidden(true)
+                         .accentColor(.white)
+                         .navigationBarBackButtonHidden(true)
+                         .alert("Drink został dodany", isPresented: $showingAlert){
+                            Button("OK", role: .cancel) { }
+                         }
                     }.frame(width: 350)
                 }
             }.accentColor(.white)
-            .navigationBarHidden(true)
-            .navigationBarBackButtonHidden(true)
+             .navigationBarHidden(true)
+             .navigationBarBackButtonHidden(true)
         }.navigationBarHidden(true)
          .navigationBarBackButtonHidden(true)
          .sheet(isPresented: $showImagePicker) {

@@ -11,7 +11,7 @@ class CheckAnyDrink {
     var ifAnyDrinkOccurs: Bool = false
     
     func changeStatus() {
-        ifAnyDrinkOccurs = true
+        self.ifAnyDrinkOccurs = true
     }
 }
 
